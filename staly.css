@@ -1,0 +1,85 @@
+/* staly.css */
+
+/*
+  1. Estilo Básico para a Página
+  Aplica uma fonte mais limpa e centraliza o texto.
+*/
+body {
+    /* Define uma altura mínima para o body para centralizar o conteúdo */
+    min-height: 100vh; 
+    /* Remove a margem padrão do navegador */
+    margin: 0; 
+    /* Define uma família de fonte padrão */
+    font-family: 'Arial', sans-serif; 
+    /* Cor de fundo suave para o corpo da página */
+    background-color: #f4f4f9; 
+    /* Centraliza o conteúdo (principalmente o <h1>) */
+    text-align: center;
+    /* Usa Flexbox para centralizar o conteúdo na vertical (opcional, mas bom para páginas simples) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alinha o conteúdo ao topo */
+    padding-top: 50px; /* Adiciona um espaço no topo */
+}
+
+/* 2. Estilo para o Título (h1)
+  Define a cor e um espaçamento para destacar o título principal.
+*/
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2em; /* Tamanho da fonte maior */
+    border-bottom: 2px solid #5c67f2;
+    padding-bottom: 10px;
+}
+
+/* 3. Estiliza os Botões (<button>)
+  Aplica um design moderno e os coloca lado a lado.
+*/
+button {
+    /* Transforma os botões em blocos de tamanho fixo e os alinha lado a lado */
+    display: inline-block; 
+    /* Margem para separar os botões */
+    margin: 10px; 
+    /* Remove a borda padrão */
+    border: none; 
+    /* Borda sutil */
+    border-radius: 8px; 
+    /* Cor de fundo para o botão */
+    background-color: #5c67f2; 
+    /* Adiciona sombra para um efeito 3D suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    /* Transição suave para efeitos de hover */
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    /* Padding interno para um botão maior */
+    padding: 0; /* O padding será definido pelo <h2> */
+    cursor: pointer;
+}
+
+/* 4. Estiliza o Título Interno ao Botão (h2)
+  Define o texto dentro do botão.
+*/
+button h2 {
+    /* Remove margens e padding padrão do <h2> */
+    margin: 0;
+    padding: 15px 30px; 
+    /* Cor do texto (branco) */
+    color: white; 
+    /* Tamanho da fonte */
+    font-size: 1.1em;
+}
+
+/* 5. Efeitos Interativos (Hover e Active)
+  Melhora a experiência do usuário ao interagir com o botão.
+*/
+button:hover {
+    /* Cor de fundo mais escura ao passar o mouse */
+    background-color: #4a54e1; 
+}
+
+button:active {
+    /* Efeito de "apertar" o botão ao clicar */
+    transform: translateY(2px); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
